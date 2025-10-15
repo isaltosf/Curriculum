@@ -112,4 +112,24 @@ section > form{
     grid-column: 1 / -1; 
 }
 
+/* Estilos básicos para hacer la tabla visible */
 
+#Certificados\ y\ Cursos table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#Certificados\ y\ Cursos th, 
+#Certificados\ y\ Cursos td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+
+}
+
+#Certificados\ y\ Cursos th:hover, 
+#Certificados\ y\ Cursos td:hover{
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
