@@ -38,6 +38,7 @@
 }
 
 
+
 h1 {
 
     /* Alineación del texto */
@@ -51,6 +52,12 @@ nav > ul {
 
     /* Eliminar los estilos de lista predeterminados */
     list-style: none;
+    display: flex; /* activar el modelo diseño flexbox */
+    justify-content: space-between; /*distribuye el espacio equitativamente */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
 }
 
@@ -84,3 +91,25 @@ footer ul{
     justify-content: center;
     gap: 15px;
 }
+
+section > form{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    gap: 1rem;
+} 
+#referencias {
+    /* Activa el modelo diseño Grid */
+    display: grid; 
+    /* Define 3 columnas de igual ancho (1fr) para que los artículos compartan el espacio */
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* Espacio de separación entre filas y columnas */
+    gap: 1rem;
+}
+
+/* El subtítulo (h2) debe ocupar todas las columnas */
+#referencias h2 {
+    grid-column: 1 / -1; 
+}
+
+
